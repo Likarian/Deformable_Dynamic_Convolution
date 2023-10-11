@@ -24,7 +24,7 @@ parser.add_argument('--conv', metavar='conv', type=str, default = 'static', help
 parser.add_argument('--dynamic', metavar='dynamic', type=int, default = 1, help='dynamic num')
 parser.add_argument('--name', metavar='name', type=int, default = 1, help='name')
 parser.add_argument('--epoch', metavar='epoch', type=int, default = 100, help='epoch num')
-parser.add_argument('--batch', metavar='batch_size', type=int, default = 100, help='batch size')
+parser.add_argument('--batch', metavar='batch_size', type=int, default = 128, help='batch size')
 args = parser.parse_args()
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID" 
